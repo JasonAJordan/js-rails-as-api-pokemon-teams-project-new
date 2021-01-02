@@ -29,11 +29,12 @@ function trainerEdit(event){
     let id = (event.target.parentElement.dataset.id)
 
     let data = {
-
-        species: "Test",
-        nickname: "Testtt",
-        trainer_id: id
+        trainer_id_: id
      } 
+     console.log(data)
+
+             // species: "Test",
+        // nickname: "Testtt",
 
     if (event.target.innerHTML === 'Add Pokemon'){
             fetch(POKEMONS_URL, {
@@ -65,8 +66,6 @@ function trainerEdit(event){
 
     }
 
-    
-            
     
 }
 
